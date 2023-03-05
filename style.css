@@ -1,12 +1,99 @@
+*{
+	box-sizing: border-box;
+}
 h1{
-	color: blue;
-}
-h3{
-	background-color: green;
+	text-align: center;
+    margin-right: 188px;
 }
 
-
+.container{
+	margin: 17px;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+}
 p{
-	font-size:50px;
-	background-color: orange;
+    padding-top: 25px;
+    padding-left: 5px;
+}
+div .column1{
+	position: relative;
+	border: 3px solid black;
+    width: 403px;
+    float: left;
+    padding: 11px;
+    margin-right: 32px;
+    margin-bottom: 10px;
+}
+.chicken{
+
+    border: 3px solid black;
+    width: 78px;
+    padding: 4px;
+    margin-left: 311px;
+    margin-right: -13px;
+    margin-bottom: -19px;
+    margin-top: -13px;
+}
+div .column2{
+	position: relative;
+	border: 3px solid black;
+    width: 403px;
+    float: left;
+    padding: 11px;
+    margin-right: 32px;
+     margin-bottom: 10px;
+}
+.beef{
+    display: flex;
+    border: 3px solid black;
+    padding: 4px;
+    width: 68px;
+    padding-left: 10px;
+    margin-left: 321px;
+    margin-top: -13px;
+    margin-bottom: -16px;
+}
+div .column3{
+	position: relative;
+	border: 3px solid black;
+    width: 403px;
+    float: left;
+    padding: 11px;
+    margin-right: 32px;
+    margin-bottom: 10px;
+}
+.sushi{
+	border: 3px solid black;
+    width: 61px;
+    padding: 3px;
+    padding-left: 6px;
+    margin-left: 328px;
+    margin-top: -13px;
+    margin-bottom: -12px;
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.container{
+      display: flex;
+      flex-direction: column;
+    }
+    .column1{
+        flex: 25%; 
+    }
+    .column2{
+        flex: 25%;
+    }
+    .column3{
+        clear: left;
+        width: 600px;
+    }
+}
+
+@media (max-width:767px)
+{
+    .container{
+        flex-direction: column;
+    }
 }
